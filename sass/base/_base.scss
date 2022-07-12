@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $color-very-light-gray;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.component {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  gap: 1.2rem;
+  text-align: center;
+
+  &-grey {
+    font-weight: 200;
+  }
+
+  &-bold {
+    color: $color-dark-blue;
+    margin-bottom: 1.5rem;
+  }
+}
+
+section.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.column {
+  width: 31.5%;
+}
